@@ -1,1 +1,388 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+ 
+        <title>story</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">	
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+        <link rel="stylesheet" href="../css/common/bootstrap.min.css">
+
+        <script type="text/javascript" src="../js/common/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="../js/common/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="../css/common/reset.css">
+        <link rel="stylesheet" href="../css/common/login.css">
+        <link rel="stylesheet" href="../css/common/footer.css">
+        <link rel="stylesheet" href="../css/detail/detail_story.css">
+
+    </head>
+    
+    <body> 
+        <div id="header_wrap">
+            <div id = "header">
+                <div class="left">
+                    <h1><a href="../index.html">WDW</a></h1>
+                    <nav class="navbar navbar-expand-lg navbar-light" style="height: 50px;">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                            <ul class="navbar-nav mr-auto" style="height: 50px;">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="../product_investment/reward_main.html">상품투자 <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../idea/idea.html">아이디어</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    더보기
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../aboutus/aboutus.html">회사소개</a>
+                                    <a class="dropdown-item" href="../notice/notice.html">공지사항</a>
+                                    <a class="dropdown-item" href="#">이용가이드</a>
+                                    <!-- <div class="dropdown-divider"></div> -->
+                                    <a class="dropdown-item" href="../questions/questions.html">문의사항</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class = "projec_join">
+                    <a href="../project_up/funding_establishment.html"><button type="button" class="btn btn-outline-primary">프로젝트 등록</button></a>
+                    <a href="../login/login.html"><button type="button" class="btn">로그인</button></a>
+                    <a href="../join/join.html"><button type="button" class="btn">회원가입</button></a>
+                </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn search my-2 my-sm-0" type="submit"><img src="../img/common/ico_search.png" alt=""></button>
+                </form>
+            </div>
+        </div>
+ 
+
+        <div id="wrap">	 
+
+            <!-- 큰제목 -->
+            <div class="content_top">
+                <div class="big_title">
+                    <div>
+                        <p>서른가지 스톤을 셋팅 할 수 있는 팬던트 "별을 따다줄게"</p>
+                        <p>월창 月暢</p>
+                    </div>
+                </div>      
+                
+                <!-- 상품사진 + 간단정보-->  
+
+                <!--메인썸네일-->
+                <div class="goods_top">
+                    <div>
+                        <img src="../img/detail/goods_main.jpg">
+                    </div>
+
+                    <div>
+                        <div>
+                            <p>펀딩금액</p>
+                            <p>3,803,000</p><p>원</p>
+                        </div>
+                        
+                        <div>
+                            <p>달성률</p>
+                            <p>2,355</p><p>%</p>
+                        </div>
+                                        
+                        <div>
+                            <p>후원자</p>
+                            <p>185</p><p>명</p>
+                        </div>
+
+                        <hr>
+
+                        <div id="dday">
+                            <p>480 : 10 : 40</p>
+                        </div>
+
+                        <a href="../payment/payment.html">
+                            <div>
+                                프로젝트 펀딩하기
+                            </div>
+                        </a>
+
+                        <div><input type="checkbox" id="heart"><label for="heart"><div></div><p>254</p></label></div>
+                        
+                        <div class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop2">문의</div>
+                        
+                        <div class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop3">공유하기</div>
+
+                        <!-- Modal -->
+                        <div class="write modal fade" id="staticBackdrop3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    
+                                    <div class="modal-body">
+                                        
+                                        <div class="sns-go">
+                                            <ul>
+                                              <li>
+                                                <a href="#" onclick="javascript:window.open('http://share.naver.com/web/shareView.nhn?url=' +encodeURIComponent(document.URL)+'&title='+encodeURIComponent(document.title), 'naversharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" alt="Share on Naver" ><img src="../img/detail/sns_naver.png" width="40" alt="네이버 블러그 공유하기"></a>
+                                              </li>
+                                              <li>
+                                                <a href="#" onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u=' +encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" alt="Share on Facebook" ><img src="../img/detail/sns_face.png" width="40" alt="페이스북 공유하기"></a>
+                                              </li>
+                                              <li>
+                                                <a href="#" onclick="javascript:window.open('https://twitter.com/intent/tweet?text=[%EA%B3%B5%EC%9C%A0]%20' +encodeURIComponent(document.URL)+'%20-%20'+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" alt="Share on Twitter" ><img src="../img/detail/sns_tw.png" width="40" alt="트위터 공유하기"></a>
+                                              </li>
+                                              <li>
+                                                <a href="#" onclick="javascript:window.open('https://story.kakao.com/s/share?url=' +encodeURIComponent(document.URL), 'kakaostorysharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes, height=400,width=600');return false;" target="_blank" alt="Share on kakaostory"><img src="../img/detail/sns_kakao.png" width="40" alt="카카오스토리 공유하기"></a>
+                                              </li>
+                                            </ul>
+                                          </div>
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 공지사항, 커뮤니티 등 카테고리 -->
+                
+            <!-- 카테고리 -->
+            <div class="category">
+                <div>
+                    <a href="detail_story.html">스토리</a>
+                    <a href="detail_community.html">커뮤니티</a>
+                    <a href="detail_company_info.html">회사정보</a>
+                    <a href="detail_fdGuide.html">환불 · 정책</a>
+                    <a href="detail_fd_process.html">진행과정</a>
+                </div>
+            </div>
+            
+            <!-- 상세 -->
+            <div class="detail">
+                <div class="out">
+                    <div class="detail_left">
+                        <img src="../img/detail/d_1.jpg">
+                        <p>-<br/>
+                            안녕하세요. 저는 을지로에서 주얼리를 디자인, 제작 하고 있는 월창 입니다.
+                            제가 좋아하는 분위기를 주얼리에 표현하는 일에 큰 즐거움과 설레임을 느끼고 있어요.
+                            이는 주얼리 뿐만이 아니라, 사진 한장이나 글이 될 수도 있고, 왓두원과 같은 프로젝트가 되기도 해요.  
+                        </p>
+                        <img src="../img/detail/d_2.jpg">
+                    </div>
+
+                    <div class="detail_right">
+                        <div>
+                            <p>창작자 소개</p>
+                            <p><img src="../img/detail/owner.JPG"><a>월창 月暢</a></p>
+                            <p>좋아하는 무드를 주얼리에 담고 있습니다.</p>
+                            <hr>
+                            <p>창작자 평균 응답 시간</p><p>9시간 이내</p>
+                            
+                            <a class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop2">
+                                <div>
+                                    <img src="../img/detail/message_light.png"><p>창작자에게 문의하기</p>
+                                </div>
+                            </a>
+
+                            <!-- Modal -->
+                            <div class="ask modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-lg modal-dialog ">
+                                    <div class="modal-content">
+
+                                        <h1>창작자에게 문의하기</h1>
+                                        
+                                        <div class="modal-body">
+
+                                            <form class="ask_content">
+
+                                                <div>
+                                                    <p>받는사람</p>
+                                                    <p>(주)알쥐비</p>
+                                                </div>
+
+                                                <div>
+                                                    <p>문의 내용</p>
+                                                    <select name="ask_kind">
+                                                        <option disabled value="문의 유형" selected>문의 유형</option>
+                                                        <option value="프로젝트">프로젝트</option>
+                                                        <option value="수령자 정보">수령자 정보</option>
+                                                        <option value="교환/환불">교환/환불</option>
+                                                        <option value="배송">배송</option>
+                                                        <option value="기타">기타</option>
+                                                    </select>
+                                                </div>
+
+                                                <textarea placeholder="프로젝트 진행자에게 문의하고 싶은 내용을 적어주세요"></textarea>
+
+                                            </form>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                                            <button type="button" class="btn btn-primary">등록</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- 리워드 선택 -->
+                        <p>리워드 선택</p>
+                        <div class="reward_choose">
+
+                            <a class="only_funding" href="../payment/payment.html">
+                                <p>1,000원+</p>
+                                <p>상품을 받지 않고, 펀딩만 하겠습니다.</p>
+                            </a>
+
+                            <a class="re_choice" href="../payment/payment.html">
+                                <p>42,000원</p>
+
+                                <p>[슈퍼얼리버드] 열쇠 팬던트 + 체인</p>
+                                <p>열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1) +
+                                    열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1)</p>
+                                <p>배송비</p>
+                                <p>0원</p>
+                            </a>
+
+
+                            <a class="re_choice" href="../payment/payment.html">
+                                <p>62,000원</p>
+
+                                <p>[슈퍼얼리버드] 열쇠 팬던트 + 체인</p>
+                                <p>열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1) +
+                                    열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1)</p>
+                                <p>배송비</p>
+                                <p>0원</p>
+                            </a>
+
+                            
+                            <a class="re_choice" href="../payment/payment.html">
+                                <p>82,000원</p>
+
+                                <p>[슈퍼얼리버드] 열쇠 팬던트 + 체인</p>
+                                <p>열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1) +
+                                    열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1)</p>
+                                <p>배송비</p>
+                                <p>0원</p>
+                            </a>
+
+                            
+                            <a class="re_choice" href="../payment/payment.html">
+                                <p>102,000원</p>
+
+                                <p>[슈퍼얼리버드] 열쇠 팬던트 + 체인</p>
+                                <p>열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1) +
+                                    열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1)</p>
+                                <p>배송비</p>
+                                <p>0원</p>
+                            </a>
+
+                            
+                            <a class="re_choice" href="../payment/payment.html">
+                                <p>122,000원</p>
+
+                                <p>[슈퍼얼리버드] 열쇠 팬던트 + 체인</p>
+                                <p>열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1) +
+                                    열쇠 팬던트 (x1) + 열쇠 팬던트-체인 (x1)</p>
+                                <p>배송비</p>
+                                <p>0원</p>
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <footer class = "footer_wrap">
+            <div class="footer">
+                <div class="footermenu">
+                    <div class="footerlist">
+                        <ul>
+                            <li><a href="#">회원가입약관</a></li>
+                            <li><a href="#">서비스이용약관</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                            <li class = "cl"><a href="#">운영정책</a></li>
+                            <li><a href="#">제휴문의</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="add_container">
+                        <div class="add_container_in footer_container">
+                            <div class="add_textr">
+                                <span class="footer_title">WDW 대표 고객센터</span>
+                                <div class="footer_divide">
+                                    <span class="dialing">010-0000-0000</span>
+                                    <span class="division">|</span>
+                                </div>
+                                <div class="footer_divide">
+                                    <a class="footer_link" href="#" target="_blank">카카오톡 채널@WDW</a>
+                                    <span class="division">|</span>
+                                </div>
+                                <div class="footer_divide">
+                                    <a class="footer_link" href="mailto:email@naver.com">naver.com</a>
+                                    <span class="division">|</span>
+                                </div>
+                                <div class="footer_divide">
+                                    <span class="block"> W 멤버십 고객센터 0000-0000</span>
+                                </div>
+                            </div>
+                            <div class="footer_section">
+                                <div class="footer_inner">
+                                    <div>
+                                        <div class="footer_divide">
+                                            <span>WDW (주)</span>
+                                            <span class="division">|</span>
+                                        </div>
+                                        <div class="footer_divide">
+                                            <span>대표이사 땡땡땡</span>
+                                            <span class="division">|</span>
+                                        </div>
+                                        <div class="footer_divide">
+                                            <span>사업자등록번호 000-00-00000</span>
+                                            <span class="division">|</span>
+                                        </div>
+                                        <div class="footer_divide">
+                                            <span>주소주소주소주소를 입력해주세요주소주소주소주소주먹고싶당주소주</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+
+
+
+</html>
